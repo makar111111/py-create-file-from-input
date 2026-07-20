@@ -1,4 +1,4 @@
-def create_file_from_input() -> None:
+def main() -> None:
     file_name: str = input("Enter name of the file: ")
     lines: list[str] = []
 
@@ -13,4 +13,5 @@ def create_file_from_input() -> None:
             file.write(content_line + "\n")
 
 
-create_file_from_input()
+if __name__ == "__main__":
+    main()
